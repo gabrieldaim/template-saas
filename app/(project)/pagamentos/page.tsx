@@ -1,7 +1,6 @@
 "use client"
 
 import { useStripe } from "@/app/hooks/useStripe"
-import test from "node:test"
 
 
 export default function Pagamentos() {

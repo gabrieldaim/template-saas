@@ -1,4 +1,3 @@
-import { metadata } from './../../../(project)/layout';
 import stripe from "@/app/lib/stripe";
 import { NextRequest, NextResponse } from "next/server";
 

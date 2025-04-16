@@ -33,7 +33,7 @@ export function useStripe(){
         }
     }
 
-    async function createSubscriptionStripeCheckout(checkoutData: any){
+    async function createSubscriptionStripeCheckout(checkoutData: {testeId:String}){
         if (!stripe) return;
 
         try{

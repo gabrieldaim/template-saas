@@ -5,7 +5,6 @@ import { handleStripeSubscription } from "@/app/server/stripe/handle-subscriptio
 
 import { headers } from "next/headers";
 import { NextRequest, NextResponse } from "next/server";
-import Stripe from "stripe";
 
 const secret = process.env.STRIPE_WEBHOOK_SECRET;
 
@@ -32,7 +31,6 @@ export async function POST(req: NextRequest) {
                 if(metadata?.price === process.env.STRIPE_SUBSCRIPTION_PRICE_ID) {
                     await handleStripeSubscription(event)
                 }
-                const session = event.data.object;
                 console.log("Checkout session completed");
                 break;
             case "checkout.session.expired":

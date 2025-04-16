@@ -1,5 +1,4 @@
 import { auth } from '@/app/lib/auth';
-import { metadata } from './../../../(project)/layout';
 import stripe from "@/app/lib/stripe";
 import { NextRequest, NextResponse } from "next/server";
 import { getOrCreateCustomerId } from '@/app/server/stripe/get-customer-id';

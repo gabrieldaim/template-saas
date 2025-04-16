@@ -1,6 +1,6 @@
-import { initializeApp, getApps, cert, App } from "firebase-admin/app";
+import { initializeApp, getApps, cert } from "firebase-admin/app";
 import { getFirestore } from "firebase-admin/firestore";
-import { getStorage } from "firebase-admin/storage";
+// import { getStorage } from "firebase-admin/storage";
 import "server-only";
 
 const decodedKey = Buffer.from(
@@ -12,7 +12,7 @@ const decodedKey = Buffer.from(
 const projectId = process.env.FIREBASE_PROJECT_ID;
 const clientEmail = process.env.FIREBASE_CLIENT_EMAIL;
 const privateKey = decodedKey
-const storageBucket = process.env.FIREBASE_STORAGE_BUCKET;
+// const storageBucket = process.env.FIREBASE_STORAGE_BUCKET;
 
 
 

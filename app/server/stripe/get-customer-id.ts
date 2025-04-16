@@ -30,6 +30,7 @@ export async function getOrCreateCustomerId(userId: string, userEmail: string) {
 
         return stripeCustomer.id;
     }   catch (error) {
-
+        console.error("Error creating or retrieving customer ID:", error);
+        throw new Error("Failed to create or retrieve customer ID");
     }
 }

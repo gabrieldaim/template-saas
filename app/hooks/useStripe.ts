@@ -12,7 +12,7 @@ export function useStripe(){
         loadStripeAsync();
     }, []);
 
-    async function createPeyamentStripeCheckout(checkoutData: any){
+    async function createPeyamentStripeCheckout(checkoutData: {testeId: string}){
         if (!stripe) return;
 
         try{
@@ -33,7 +33,7 @@ export function useStripe(){
         }
     }
 
-    async function createSubscriptionStripeCheckout(checkoutData: {testeId:String}){
+    async function createSubscriptionStripeCheckout(checkoutData: {testeId: string}){
         if (!stripe) return;
 
         try{

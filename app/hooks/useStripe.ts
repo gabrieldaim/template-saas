@@ -12,7 +12,7 @@ export function useStripe(){
         loadStripeAsync();
     }, []);
 
-    async function createPeyamentStripeCheckout(checkoutData: {testeId: string}){
+    async function createPaymentStripeCheckout(checkoutData: {testeId: string}){
         if (!stripe) return;
 
         try{
@@ -66,5 +66,5 @@ export function useStripe(){
         window.location.href = data.url;
     }
 
-    return {createPeyamentStripeCheckout, createSubscriptionStripeCheckout, handleCreateStripePortal}
+    return {createPaymentStripeCheckout, createSubscriptionStripeCheckout, handleCreateStripePortal}
 }

@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import "./globals.css";
 import { Poppins } from "next/font/google";
 
@@ -17,20 +16,19 @@ export const metadata = {
     siteName: "Meu Site",
     images: [
       {
-        url: "/opengraph-image.jpg", // Caminho da imagem (ou URL completa)
+        url: "/opengraph-image.jpg",
         width: 1200,
         height: 630,
         alt: "Minha imagem de destaque",
       },
     ],
     type: "website",
-    twitter: {
-      card: "summary_large_image",
-      title: "Meu Site",
-      description: "Descrição no Twitter",
-      images: ["/opengraph-image.jpg"],
-    },
-    
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Meu Site",
+    description: "Descrição no Twitter",
+    images: ["/opengraph-image.jpg"],
   },
 };
 

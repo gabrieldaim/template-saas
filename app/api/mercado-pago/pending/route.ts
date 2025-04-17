@@ -8,12 +8,11 @@ export async function GET(req: NextRequest) {
     const testeId = searchParams.get("external_reference");
 
     if (!paymentId || !testeId) {
-        return new Response("Missing payment_id or testeId", { status: 400 });
+        return NextResponse.json({ error: "Missing payment_id or external_reference" }, { status: 400 });
     }
 
     const payment = new Payment(mpClient);
     const paymentData = await payment.get({ id: paymentId });
-
     if (paymentData.status === "approved" || paymentData.date_approved !== null) {
         return NextResponse.redirect(new URL(`/success`, req.url));
     }

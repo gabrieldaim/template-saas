@@ -1,4 +1,3 @@
-import { metadata } from './../../(project)/layout';
 import { PaymentResponse } from 'mercadopago/dist/clients/payment/commonTypes';
 
 export async function handleMercadoPagoPayment(paymentData: PaymentResponse) {

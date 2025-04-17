@@ -7,7 +7,7 @@ export function useMercadoPago(){
 
     
     useEffect(() => {
-        initMercadoPago(process.env.NEXT_MERCADO_PAGO_PUBLIC_KEY!)
+        initMercadoPago(process.env.MERCADO_PAGO_PUBLIC_KEY!)
     },[])
 
     async function createMercadoPagoCheckout({ testeId, userEmail }: { testeId: string; userEmail: string }){

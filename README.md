@@ -34,3 +34,21 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Variáveis de ambiente
+AUTH_SECRET
+AUTH_GOOGLE_ID
+AUTH_GOOGLE_SECRET
+FIREBASE_PROJECT_ID
+FIREBASE_CLIENT_EMAIL
+FIREBASE_PRIVATE_KEY_BASE64
+FIREBASE_PRIVATE_KEY
+FIREBASE_STORAGE_BUCKET
+STRIPE_SECRET_KEY
+STRIPE_PRODUCT_PRICE_ID
+NEXT_PUBLIC_STRIPE_PUB_KEY
+STRIPE_SUBSCRIPTION_PRICE_ID
+STRIPE_WEBHOOK_SECRET
+MERCADO_PAGO_PUBLIC_KEY
+MERCADO_PAGO_ACCESS_TOKEN
+MERCADO_PAGO_WEBHOOK_SECRET
